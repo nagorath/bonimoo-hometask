@@ -1,0 +1,7 @@
+.site_container{
+  width: 100%;
+  .content_container {
+    min-height: calc(100vh - 120px - 230px);
+    margin-bottom: 60px;
+  }
+}

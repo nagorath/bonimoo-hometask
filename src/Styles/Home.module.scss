@@ -1,0 +1,11 @@
+.home_container {
+    padding: 25px 125px 0 125px;
+    display: flex;
+}
+
+@media (max-width: 720px) {
+    .home_container {
+        padding: 25px 25px;
+        justify-content: space-between;
+    }   
+}

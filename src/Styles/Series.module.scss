@@ -1,0 +1,7 @@
+.series_container {
+    padding: 25px 125px 25px 125px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}

@@ -1,0 +1,39 @@
+.card_wrapper {
+    display: flex;
+    flex-direction: column;
+    .card_container {
+        height: 250px;
+        width: 165px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1E1E1E;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-out;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        &:hover {
+            transform: scale(1.02) perspective(1px)
+        }
+        span {
+            z-index: 10;
+            position: absolute;
+            font-size: 35px;
+        }
+        img {
+            z-index: 5;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .card_wrapper {
+        .card_container {
+            height: 200px;
+            width: 135px;
+            margin-right: 0;
+        }
+    }
+}

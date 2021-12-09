@@ -1,0 +1,109 @@
+.footer_container {
+    padding: 50px 50px 40px 125px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    height: 230px;
+    .links_container{
+        display: flex;
+        flex-direction: row;
+        .link_text {
+            font-size: 15px;
+            font-weight: 300;
+            color: #6C7E7B;
+            margin-right: 8px;
+            &.pointer {
+                cursor: pointer;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+    .copyright_container{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #6C7E7B;
+    }
+    .logos_btns_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 60px;
+        padding-left: 15px;
+        padding-right: 100px;
+        .social_media_logos_container{
+            img {
+                height: 30px;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+        }
+        .buy_logos_container{
+            img {
+                margin-right: 30px;
+                cursor: pointer;
+                height: 45px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .footer_container {
+        padding: 50px 15px 0px 15px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        .links_container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .link_text {
+                margin-bottom: 5px;
+            }
+        }
+        .copyright_container{
+
+        }
+        .logos_btns_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+            padding-left: 0px;
+            padding-right: 0px;
+            .social_media_logos_container{
+                margin-bottom: 35px;
+                img {
+                    height: 30px;
+                    margin-right: 33px;
+                    cursor: pointer;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+            .buy_logos_container{
+                display: flex;
+                flex-direction: column;
+            
+                
+                img {
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    height: 45px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }   
+}
